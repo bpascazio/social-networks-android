@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/facebook_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:onClick="facebookLogin"
+        android:text="Facebook sign in"
+        />
+    <Button
+        android:id="@+id/twitter_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Twitter sign in"
+        android:onClick="twitterLogin"
+        />
+    
+    <Button
+        android:id="@+id/easter_egg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Easter Egg"
+        android:visibility="gone"
+        android:onClick="easterEgg"
+        />
+    <WebView
+        android:id="@+id/twitter_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+    
+    <TextView
+        android:id="@+id/easter_egg_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"/>
+    
+
+</LinearLayout>
