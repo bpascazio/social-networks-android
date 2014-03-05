@@ -320,6 +320,7 @@ public class MainActivity extends Activity {
 						User user = twitter.showUser(userId);
 						if (user != null) {
 							savePreference(USER_FIRST_NAME,user.getName());
+							savePreference(USER_LAST_NAME,null);
 							
 						}
 					}
@@ -329,6 +330,7 @@ public class MainActivity extends Activity {
 						User user = mTwitter.showUser(userId);
 						if (user != null) {
 							savePreference(USER_FIRST_NAME,user.getName());
+							savePreference(USER_LAST_NAME,null);
 						}
 					}
 				}
